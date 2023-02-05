@@ -1,0 +1,46 @@
+
+<!--<a class="navbar-brand" ></a>-->
+
+<div class="col-lg-20 mb-3"  style="background-color: #e3f2fd;width: 100%">
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" >期末專案-輿情大數據</a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'app_top_keyword:home' %}">熱門關鍵詞分析</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'app_top_person:home' %}">熱門人物排行分析</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'app_top_ner:home'%}">實體辨識熱門分析</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'app_user_keyword:home'%}">關鍵詞熱門度分析</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="{% url 'namespace_userkey_sentiment:home'%}">關鍵詞情緒分析</a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'namespace_news_classify:home' %}">文章分類</a>
+                </li>
+
+
+            </ul>
+
+        </div>
+    </nav>
+</div>
